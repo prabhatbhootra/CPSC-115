@@ -1,0 +1,13 @@
+public class FlightInfo{
+  public static void main(String argv[]){
+    private premierStatus ps1 = new premierStatus("Sue Smith");
+    ps1.addBags(4);
+    checkInClass.printCheckedBagReceipt(ps1);
+    private standardStatus ss1 = new standardStatus("Sally Summers");
+    ss1.addBags(3);
+    checkInClass.printCheckedBagReceipt(ss1);
+    private premierStatus ps2 = new premierStatus("Tom Traveler");
+    ps2.addBags(5);
+    checkInClass.printCheckedBagReceipt(ps2);
+  }
+}

@@ -1,0 +1,6 @@
+public class checkInClass{
+  public void printCheckedBagReceipt(Passenger p1){
+    p1.getPassInfo();
+    p1.calcBagCost();
+  }
+}

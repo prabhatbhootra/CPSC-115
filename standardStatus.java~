@@ -1,0 +1,11 @@
+public class standardStatus extends Passenger{
+  public double price;
+  public standardStatus(String nam){
+    super(nam, "standard");
+  }
+  public String calcBagCost(){
+    price = (numCheckedBags*checkedBagFee);
+    return ("The number of checked bags is " + numCheckedBags + "and the total cost of the checked bags is $" + price);
+  }
+}
+  

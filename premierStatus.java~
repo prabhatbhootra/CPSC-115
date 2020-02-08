@@ -1,0 +1,16 @@
+public class premierStatus extends Passenger{
+  public double price;
+  public premierStatus(String nam){
+    super(nam, "premier");
+  }
+  public String calcBagCost(){
+    price = (numCheckedBags-2)*checkedBagFee;
+    System.out.println("*******************************************");
+    System.out.println("Number of checked bags: " + numCheckedBags);
+    System.out.println("Total Cost of Checked bags = $" + price);
+    System.out.println("*******************************************");
+  }
+}
+      
+    
+    

@@ -1,0 +1,43 @@
+public abstract class Passenger{
+  private String name;
+  private String passStatus;
+  private int numCheckedBags = 0;
+  private static double checkedBagFee = 50.00;
+  private static int maxBags = 4;
+  public Passenger(String n, String p){
+    name = n;
+    passStatus = p;
+    this.numCheckedBags = numCheckedBags;
+    this.checkedBagFee = checkedBagFee;
+    this.maxBags = maxBags;
+  }
+  public String addBags(int a){
+    if ((numCheckedBags+a)<=maxBags){
+      numCheckedBags = numCheckedBags + a;
+      System.out.println("Transaction was successful. Current number of checked bags = " + numCheckedBags)
+    } else {
+      System.out.println("Transaction not succesful. Maximum bag limit reached.");
+      }
+  }
+  public void getPassInfo(){
+    System.out.println("*******************************************");
+    System.out.println("Passenger Name: " + name);
+    System.out.println("Passenger Status: " + passStatus);
+    System.out.println("*******************************************");
+  }
+  public int getnumCheckedBag(){
+    return numCheckedBags;
+  }
+  public double getcheckedBagFee(){
+    return checkedBagFee;
+  }
+  public abstract String calcBagCost(){
+  }
+}
+  
+    
+    
+          
+      
+      
+    
